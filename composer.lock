@@ -1,0 +1,99 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "ac5678a1a47c942f176ff9d24376f286",
+    "packages": [
+        {
+            "name": "mustache/mustache",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bobthecow/mustache.php.git",
+                "reference": "fdf41dd673dc99b41d60992470dbae94ae0b6ba1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bobthecow/mustache.php/zipball/fdf41dd673dc99b41d60992470dbae94ae0b6ba1",
+                "reference": "fdf41dd673dc99b41d60992470dbae94ae0b6ba1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Mustache": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Justin Hileman",
+                    "email": "justin@justinhileman.info",
+                    "homepage": "http://justinhileman.com"
+                }
+            ],
+            "description": "A Mustache implementation in PHP.",
+            "homepage": "https://github.com/bobthecow/mustache.php",
+            "keywords": [
+                "mustache",
+                "templating"
+            ],
+            "time": "2014-08-26 19:50:10"
+        },
+        {
+            "name": "pmerino/tiny-fram",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Pablo-Merino/TinyFram.git",
+                "reference": "7bb30ef447d3a2e2eefc26573e0ebb23a300c80f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Pablo-Merino/TinyFram/zipball/7bb30ef447d3a2e2eefc26573e0ebb23a300c80f",
+                "reference": "7bb30ef447d3a2e2eefc26573e0ebb23a300c80f",
+                "shasum": ""
+            },
+            "require": {
+                "mustache/mustache": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "TinyFram": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "wtfpl"
+            ],
+            "authors": [
+                {
+                    "name": "Pablo Merino",
+                    "email": "pablo.perso1995@gmail.com"
+                }
+            ],
+            "description": "A simple PHP microframework",
+            "time": "2015-03-27 11:58:51"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

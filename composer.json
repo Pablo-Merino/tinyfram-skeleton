@@ -1,0 +1,22 @@
+{
+  "name": "pmerino/tinyfram-skeleton",
+  "description": "description_text",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Pablo Merino",
+      "email": "pablo.perso1995@gmail.com"
+    }
+  ],
+
+  "minimum-stability": "dev",
+  "require": {
+    "pmerino/tiny-fram": "*"
+  },
+  "autoload": {
+    "psr-0": {
+      "SkeletonApp": "app/"
+    }
+  }
+}
