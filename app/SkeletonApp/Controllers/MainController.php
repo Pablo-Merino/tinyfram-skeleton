@@ -11,7 +11,7 @@
  * @copyright 2015
  * @license   Apache 2 License http://www.apache.org/licenses/LICENSE-2.0.html
  * @version   GIT: $Id$
- * @link      
+ * @link
  * @since     File available since Release 0.1.0
  */ 
 namespace SkeletonApp\Controllers;
@@ -41,6 +41,11 @@ class MainController extends TinyFram\Base\Controller {
      */
     public function index($matches)
     {
+        parent::httpBasicAuth(
+            array("user" => "password"), // Array with username => password
+            $this->app->render("error", array("error_code" => 403, "error_message" => "Unauthorized")) # What to show in case of wrong auth
+        );
+
         $posts = Post::all();
         return parent::renderTemplate("test", array(
             "posts" => $posts
