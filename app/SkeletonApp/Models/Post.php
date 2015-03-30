@@ -31,7 +31,7 @@ namespace SkeletonApp\Models;
 
 use TinyFram;
 
-class Post extends TinyFram\BaseModel {
+class Post extends TinyFram\Base\Model {
     public $id;
     public $title;
     public $text;

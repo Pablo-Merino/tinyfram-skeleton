@@ -29,7 +29,7 @@ use TinyFram;
  * @link       http://pablo.xyz
  * @since      Class available since Release 0.1.0
  */
-class MainController extends TinyFram\BaseController {
+class MainController extends TinyFram\Base\Controller {
     /**
      * Index method
      *
@@ -41,6 +41,9 @@ class MainController extends TinyFram\BaseController {
      */
     public function index($matches)
     {
-        return parent::renderTemplate("test");
+        $posts = Post::all();
+        return parent::renderTemplate("test", array(
+            "posts" => $posts
+        ));
     }
 }
