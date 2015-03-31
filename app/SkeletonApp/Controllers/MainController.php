@@ -41,14 +41,20 @@ class MainController extends TinyFram\Base\Controller {
      */
     public function index($matches)
     {
-        parent::httpBasicAuth(
-            array("user" => "password"), // Array with username => password
-            $this->app->render("error", array("error_code" => 403, "error_message" => "Unauthorized")) # What to show in case of wrong auth
-        );
+        return parent::renderTemplate("index");
+    }
 
-        $posts = Post::all();
-        return parent::renderTemplate("test", array(
-            "posts" => $posts
+    public function postTest($matches)
+    {
+        return parent::renderTemplate("test/subfoldered_template", array(
+            "server_env" => json_encode($this->params)
+        ));
+    }
+
+    public function namedRoutes($matches)
+    {
+        return parent::renderTemplate("test/named_routes", array(
+            "matches" => json_encode($matches)
         ));
     }
 }
